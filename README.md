@@ -40,7 +40,7 @@ and persisting data into the Cassandra cluster.
 
 # System Diagram
  - 
- ![real-time sentiment analysis](Realtime sentiment analysis from twitter feed.jpg)
+ ![](Realtime sentiment analysis from twitter feed.jpg)
 
 
 ### Description of libraries/frameworks
