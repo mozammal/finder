@@ -39,7 +39,7 @@ twit into the topology from the kafka cluster, language detection, feature engin
 and persisting data into the Cassandra cluster. 
 
 # System Diagram
- - 
+ 
  ![](sentiment.jpg)
 
 
