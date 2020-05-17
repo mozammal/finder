@@ -1,5 +1,4 @@
-# finder
-
+# finder [![Build Status](https://travis-ci.org/mozammal/finder.svg?branch=master)](https://travis-ci.org/mozammal/finder)
 ## Requirements
 
 For building and running the application you need:
