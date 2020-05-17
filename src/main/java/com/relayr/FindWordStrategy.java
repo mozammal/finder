@@ -1,6 +1,6 @@
 package com.relayr;
 
-//Strategy
+//Strategy interface
 public interface FindWordStrategy {
   public String[] find(String word);
 }

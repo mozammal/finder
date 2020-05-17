@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+// Test class
 public class FinderTest {
 
   @Test
@@ -29,14 +30,35 @@ public class FinderTest {
   }
 
   @Test
+  public void testShouldReturnEmptyWordWhenDictionaryISNull() {
+    String[] dictionary = null;
+    Finder finder = new Finder(dictionary);
+    String[] results = finder.find("sad");
+    Assert.assertArrayEquals(new String[0], results);
+  }
+
+  @Test
+  public void testShouldReturnEmptyWordWhenSearchedForNullWord() {
+    String[] dictionary = new String[5];
+    dictionary[0] = "asd";
+    dictionary[1] = "asdd";
+    dictionary[2] = "fre";
+    dictionary[3] = "glk";
+    dictionary[4] = "lkm";
+    Finder finder = new Finder(dictionary);
+    String[] results = finder.find(null);
+    Assert.assertArrayEquals(new String[0], results);
+  }
+
+  @Test
   public void testShouldReturnEmptyResult() {
-    String[] dictioanry = new String[5];
-    dictioanry[0] = "asd";
-    dictioanry[1] = "asdd";
-    dictioanry[2] = "fre";
-    dictioanry[3] = "glk";
-    dictioanry[4] = "lkm";
-    Finder finder = new Finder(dictioanry);
+    String[] dictionary = new String[5];
+    dictionary[0] = "asd";
+    dictionary[1] = "asdd";
+    dictionary[2] = "fre";
+    dictionary[3] = "glk";
+    dictionary[4] = "lkm";
+    Finder finder = new Finder(dictionary);
     String[] results = finder.find("sada");
     Assert.assertArrayEquals(new String[0], results);
   }
